@@ -1,12 +1,16 @@
 package com.example.mj2;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                final Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
             }
         });
@@ -27,11 +31,30 @@ public class MainActivity extends AppCompatActivity {
         btnAno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
+                Intent intent1 = new Intent(getApplicationContext(), ThirdActivity.class);
+                startActivity(intent1);
+            }
+        });
+        setContentView(R.layout.third);
+        Button btnApply = (Button) findViewById(R.id.btnApply);
+        btnApply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),FourActivity.class);
                 startActivity(intent);
+            }
+        });
+        Button btnGet1 = (Button) findViewById(R.id.btnGet1);
+        btnGet1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
             }
         });
     }
 }
+
+
+
 
 
