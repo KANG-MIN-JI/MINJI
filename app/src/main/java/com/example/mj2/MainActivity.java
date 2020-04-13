@@ -1,9 +1,9 @@
 package com.example.mj2;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -48,7 +48,11 @@ public class MainActivity extends AppCompatActivity {
         btnGet1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
+                android.app.AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
+                dlg.setTitle("지문인식");
+                dlg.setMessage("택배수령을 하시려면 지문인식하세요");
+                dlg.setIcon(R.mipmap.ic_launcher);
+                dlg.show();
             }
         });
     }
