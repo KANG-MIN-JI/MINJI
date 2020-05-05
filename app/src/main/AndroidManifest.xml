@@ -19,6 +19,8 @@
         <activity android:name=".SecondActivity" android:label="Second 액티비티"/>
         <activity android:name=".ThirdActivity" android:label="Third 액티비티"/>
         <activity android:name=".FourActivity" android:label="Four 액티비티"/>
+        <activity android:name=".LoginActivity" android:label="Login 액티비티"/>
+        <activity android:name=".RegisterActivity" android:label="Register 액티비티"/>
     </application>
 
 </manifest>

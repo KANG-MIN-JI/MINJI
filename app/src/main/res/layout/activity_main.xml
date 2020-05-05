@@ -19,6 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="저소득층" />
+        android:text="특별사용자" />
 
 </LinearLayout>
